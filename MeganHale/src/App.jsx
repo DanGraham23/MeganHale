@@ -1,10 +1,20 @@
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import EventResults from './components/EventResults';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      
+      <Navbar />
+      <Home />
+      <About />
+      <EventResults />
+      <Contact />
+      <Footer />
     </div>
   )
 }
