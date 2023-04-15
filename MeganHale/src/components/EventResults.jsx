@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import EventCard from './EventCard.jsx';
 
 const EventResults = () => {
     return (
-        <EventResultsContainer id="event-results">
-            <div>RESULT 1</div>
-            <div>RESULT 2</div>
-            <div>RESULT 3</div>
+        <EventResultsContainer tsContainer id="event-results">
+            <EventCard />
+            <EventCard />
+            <EventCard />
         </EventResultsContainer>
     )
 }
@@ -17,6 +18,7 @@ const EventResultsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 50px;
 `
 
 export default EventResults;
