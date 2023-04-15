@@ -10,7 +10,8 @@ const Footer = () => {
 
 const FooterContainer = styled.footer`
     height: 150px;
-    background-color: gray;
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;

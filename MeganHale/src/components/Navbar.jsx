@@ -63,7 +63,7 @@ const Header = styled.h1`
   font-weight: 700;
   margin-left: 100px;
   font-size: 32px;
-
+    cursor: default;
 `
 
 

@@ -30,7 +30,7 @@ const Contact = () => {
                 placeholder="Enter your email" 
                 value={formData.email}
                 onChange={handleChange}/>
-                <Input 
+                <MessageInput 
                 type="text" 
                 name="message"
                 placeholder="Message" 
@@ -51,7 +51,6 @@ const ContactContainer = styled.div`
 const Image = styled.img`
     height: 100%;
     width: 35%;
-    filter: grayscale(90%) brightness(60%) contrast(100%);
 `
 
 const Form = styled.form`
@@ -60,18 +59,49 @@ const Form = styled.form`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
+    font-size: 14px;
 `
 
 const Input = styled.input`
     width: 50%;
     height: 40px;
+    outline: none;
+    border-radius: 24px;
+    border: 2px solid black;
+    text-indent: 12px;
+    font-family: inherit;
+    font-size: inherit;
+    
+`
+
+const MessageInput = styled.textarea`
+    width: 50%;
+    height: 150px;
+    border-radius: 24px;
+    outline: none;
+    border: 2px solid black;
+    text-indent: 16px;
+    padding: 15px;
+    font-family: inherit;
+    font-size: inherit;
 `
 
 const Button = styled.button`
     width: 50%;
     height: 40px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
     &:hover{
         cursor: pointer;
+        background-color: white;
+        color: black;
+        border: 2px solid black;
     }
 `
 
