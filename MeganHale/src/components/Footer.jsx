@@ -4,7 +4,7 @@ import {AiOutlineCopyrightCircle} from 'react-icons/ai';
 const Footer = () => {
     return (
         <FooterContainer>
-            <Header>Megan Hale<AiOutlineCopyrightCircle/>2023</Header>
+            <Header><AiOutlineCopyrightCircle/>2023, Megan Hale</Header>
         </FooterContainer>
     )
 }
@@ -12,7 +12,7 @@ const Footer = () => {
 const FooterContainer = styled.footer`
     height: 150px;
     background-color: black;
-    color: white;
+    color: white ;
     display: flex;
     justify-content: center;
     align-items: center;

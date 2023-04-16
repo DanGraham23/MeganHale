@@ -20,7 +20,7 @@ const HomeContainer = styled.div`
 const Video = styled.iframe`
     width:100%;
     height: 100%;
-    filter: grayscale(90%) brightness(60%) contrast(100%);
+    filter: grayscale(90%) brightness(70%) contrast(100%);
 `
 
 export default Home;

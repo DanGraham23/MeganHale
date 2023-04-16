@@ -11,20 +11,20 @@ const EventResults = () => {
             img={megan4}
             imageDescription={"DESCRIBE THE IMAGE HERE FOR ALT TAGS"}
             title={"Ironman"}
-            location={"New York, NY"}
-            description={"This was a great event! I got to meet so many new people!! I am looking forward to coming back next year."}/>
+            location={"Albany, NY"}
+            description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis faucibus turpis vitae eleifend. Maecenas hendrerit urna nunc."}/>
             <EventCard 
             img={megan6}
             imageDescription={"DESCRIBE THE IMAGE HERE FOR ALT TAGS"}
-            title={"Ironman"}
-            location={"New York, NY"}
-            description={"This was a great event! I got to meet so many new people!! I am looking forward to coming back next year."}/>
+            title={"Triathalon"}
+            location={"Loudonville, NY"}
+            description={"Proin id tortor felis. Nunc in facilisis ligula."}/>
             <EventCard 
             img={megan7}
             imageDescription={"DESCRIBE THE IMAGE HERE FOR ALT TAGS"}
-            title={"Ironman"}
+            title={"Marathon"}
             location={"New York, NY"}
-            description={"This was a great event! I got to meet so many new people!! I am looking forward to coming back next year."}/>
+            description={"Morbi nec ipsum ut erat porttitor fringilla. Fusce laoreet egestas sollicitudin. Curabitur ac lacinia mi, in consectetur dui."}/>
         </EventResultsContainer>
     )
 }
