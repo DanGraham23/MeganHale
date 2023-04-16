@@ -1,37 +1,39 @@
 import styled from "styled-components";
-import megan4 from '../assets/images/MeganImages/megan4.jpg'
 
-const EventCard = () => {
+
+const EventCard = (props) => {
     return (
         <EventCardContainer>
-            <Image src={megan4}></Image>
-            <Title> Triathalon</Title>
-            <Location>New York, NY</Location>
-            <Description>this was a great event! I got to meet so many new people!!</Description>
-            
+            <Image 
+            src={props.img} 
+            alt={props.imageDescription}/>
+            <Title> {props.title}</Title>
+            <Location>{props.location}</Location>
+            <Description>{props.description}</Description>
         </EventCardContainer>
     )
 }
 
 const EventCardContainer = styled.div`
-    width: 25%;
+    width: 20%;
+    height: 75%;
 `
 
 const Title = styled.h1`
-    
+    height: 10%;
 `
 
 const Location = styled.h2`
-    
+    height: 10%;
 `
 
 const Description = styled.p`
-    
+    height: 30%;
 `
 
 const Image = styled.img`
-    height: 40%;
-    width: 90%;
+    height: 50%;
+    width: 100%;
 `
 
 export default EventCard;

@@ -10,14 +10,23 @@ const Contact = () => {
         message: "",
     });
 
+    function handleSubmit(e){
+        e.preventDefault();
+    }
+
     function handleChange(e){
         setFormData({...formData, [e.target.name]:e.target.value});
     }
 
     return (
         <ContactContainer id="contact">
-            <Image src={megan1} alt="megan-giving-thumbs-up-grayscaled"/>
-            <Form>
+            <Anchor 
+            href="https://www.timesunion.com/news/article/Grondahl-Triathlete-Megan-Hale-wanted-to-prove-17392607.php"
+            target="_blank"
+            rel="noopener noreferrer">
+                <Image src={megan1} alt="megan-giving-thumbs-up"/>
+            </Anchor>
+            <Form onSubmit={handleSubmit}>
                 <Input 
                 type="text" 
                 name="name"
@@ -38,7 +47,13 @@ const Contact = () => {
                 onChange={handleChange}/>
                 <Button>Send</Button>
             </Form>
-            <Image src={megan3} alt="megan-running-with-excited-dog-grayscaled"/>
+            <Anchor 
+            href="https://www.timesunion.com/news/article/Grondahl-Triathlete-Megan-Hale-wanted-to-prove-17392607.php"
+            target="_blank"
+            rel="noopener noreferrer">
+                <Image src={megan3} alt="megan-running-with-excited-dog"/>
+            </Anchor>
+            
         </ContactContainer>
     )
 }
@@ -47,10 +62,17 @@ const ContactContainer = styled.div`
     height: 520px;
     display: flex;
 `
+const Anchor = styled.a`
+    height: 100%;
+    width: 35%;
+`
 
 const Image = styled.img`
     height: 100%;
-    width: 35%;
+    width: 100%;
+    &:hover{
+        filter: grayscale(70%) brightness(80%) contrast(100%);
+    }
 `
 
 const Form = styled.form`
@@ -67,7 +89,7 @@ const Input = styled.input`
     width: 50%;
     height: 40px;
     outline: none;
-    border-radius: 24px;
+    border-radius: 8px;
     border: 2px solid black;
     text-indent: 12px;
     font-family: inherit;
@@ -77,8 +99,10 @@ const Input = styled.input`
 
 const MessageInput = styled.textarea`
     width: 50%;
+    max-width: 80%;
     height: 150px;
-    border-radius: 24px;
+    max-height: 225px;
+    border-radius: 8px;
     outline: none;
     border: 2px solid black;
     text-indent: 16px;

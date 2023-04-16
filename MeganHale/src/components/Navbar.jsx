@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <Nav>
             <Header>
-                <GiSprint />
+                <GiSprint aria-label="sprinting-logo"/>
                 Megan Hale
             </Header>
             <List>
@@ -52,9 +52,9 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 125px;
+  height: 150px;
   z-index: 10;
   color: white;
 `
