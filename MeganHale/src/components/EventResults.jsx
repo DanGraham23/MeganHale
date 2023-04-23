@@ -36,7 +36,18 @@ const EventResultsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 69px;
+    @media screen and (max-width:1024px) {
+        gap: 50px;
+    }
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        height: 1200px;
+        gap: 30px;
+    }
+    @media screen and (max-width:480px) {
+        gap: 10px;
+    }
 `
 
 export default EventResults;

@@ -67,9 +67,20 @@ const ContactContainer = styled.div`
     display: flex;
     background-color: white;
     color: black;
+    @media screen and (max-width: 1200px){
+        height: 450px;
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        height: 1000px;
+        align-items: center;
+        justify-content: center;
+    }
 `
 const FormHeader = styled.h1`
-    
+    @media screen and (max-width: 1200px){
+        font-size: 22px;
+    }
 `
 
 const ArticleHeader = styled.h1`
@@ -80,6 +91,12 @@ const ArticleHeader = styled.h1`
     color: white;
     text-decoration: underline 1px white;
     text-underline-offset: 5px;
+    @media screen and (max-width: 1200px){
+        font-size: 20px;
+    }
+    @media screen and (max-width: 768px){
+        font-size: 16px;
+    }
 `
 
 const Anchor = styled.a`
@@ -89,6 +106,13 @@ const Anchor = styled.a`
     display: inline-block;
     &:hover .text {
         display: block;
+    }
+    @media screen and (max-width: 1200px){
+        width: 32.5%;
+    }
+    @media screen and (max-width: 768px){
+        width: 60%;
+        height: 30%;
     }
 `
 
@@ -111,6 +135,13 @@ const Form = styled.form`
     font-size: 14px;
     border: 1px solid #c9c9c9;
     margin: auto;
+    @media screen and (max-width: 1200px){
+        width: 32.5%;
+    }
+    @media screen and (max-width: 768px){
+        width: 60%;
+        height: 37.5%;
+    }
 `
 
 const Input = styled.input`
@@ -140,7 +171,7 @@ const MessageInput = styled.textarea`
 `
 
 const Button = styled.button`
-    width: 25%;
+    width: 30%;
     height: 40px;
     background-color: #0000ff;
     color: white;

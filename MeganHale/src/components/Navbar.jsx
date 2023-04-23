@@ -1,14 +1,25 @@
 import styled from 'styled-components';
-import {GiSprint} from 'react-icons/gi';
+import {GiSprint, GiHamburgerMenu} from 'react-icons/gi';
+import {AiOutlineClose} from 'react-icons/ai';
 import {Link} from 'react-scroll';
+import {useState} from 'react';
 
 const Navbar = () => {
+
+    const [toggleMenu, setToggleMenu] = useState(false);
+
+    function toggleNavMenu(){
+        setToggleMenu(!toggleMenu);
+    }
+
     return (
         <Nav>
             <Header>
                 <GiSprint aria-label="sprinting-logo"/>
                 Megan Hale
             </Header>
+            {!toggleMenu && <StyledIcon><GiHamburgerMenu className='hamburger-icon' onClick={toggleNavMenu}/></StyledIcon>}
+            {toggleMenu && <StyledIcon><AiOutlineClose className='hamburger-icon' onClick={toggleNavMenu}/></StyledIcon>}
             <List>
                 <Link activeClass="active"
                 to="home"
@@ -77,7 +88,6 @@ const List = styled.ul`
   margin-right: 100px;
   font-weight: 400;
   font-size: 24px;
-
 `
 
 
@@ -95,6 +105,18 @@ const ListItem = styled.li`
     color: black;
     
   }
+  @media screen and (max-width: 1024px) {
+        display: none;
+    }
+`
+
+const StyledIcon = styled.div`
+    display: none;
+    @media screen and (max-width: 1024px) {
+        display: inline;
+        margin-left: auto;
+        cursor: pointer;
+    }
 `
 
 export default Navbar;

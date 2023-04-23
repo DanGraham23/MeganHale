@@ -30,6 +30,9 @@ const AboutContainer = styled.div`
     gap: 20px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (max-width: 768px){
+        height: 400px;
+    }
 `
 
 const BioContainer = styled.div`
@@ -37,7 +40,12 @@ const BioContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
+    @media screen and (max-width: 1200px){
+        width: 45%;
+    }
+    @media screen and (max-width: 1024px){
+        width: 50%;
+    }
 `
 
 const Image = styled.img`
@@ -45,14 +53,53 @@ const Image = styled.img`
     height: 300px;
     border-radius: 100%;
     border: 3px solid black;
+    @media screen and (max-width: 1200px){
+        width: 250px;
+        height: 250px;
+    }
+    @media screen and (max-width: 1024px){
+        width: 250px;
+        height: 250px;
+    }
+    @media screen and (max-width: 768px){
+        width: 200px;
+        height: 200px;
+    }
+    @media screen and (max-width: 480px){
+        width: 175px;
+        height: 175px;
+    }
 `
 
 const Paragraph = styled.p`
-    
+
+    @media screen and (max-width: 1200px){
+        font-size: 15px;
+    }
+    @media screen and (max-width: 1024px){
+        font-size: 14px;
+    }
+    @media screen and (max-width: 768px){
+        font-size: 11px;
+    }
+    @media screen and (max-width: 480px){
+        font-size: 10px;
+    }
 `
 
 const Header = styled.h1`
-
+    @media screen and (max-width: 1200px){
+        font-size: 22px;
+    }
+    @media screen and (max-width: 1024px){
+        
+    }
+    @media screen and (max-width: 768px){
+        font-size: 20px;
+    }
+    @media screen and (max-width: 480px){
+        font-size: 18px;
+    }
 `
 
 export default About;
