@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import EventCard from './EventCard.jsx';
-import megan4 from '../assets/images/MeganImages/megan4.jpg';
-import megan6 from '../assets/images/MeganImages/megan6.jpg';
-import megan7 from '../assets/images/MeganImages/megan7.jpg';
+import megan4 from '../assets/images/megan4.jpg';
+import megan6 from '../assets/images/megan6.jpg';
+import megan7 from '../assets/images/megan7.jpg';
 
 const EventResults = () => {
     return (
@@ -10,20 +10,20 @@ const EventResults = () => {
             <EventCard 
             img={megan4}
             imageDescription={"DESCRIBE THE IMAGE HERE FOR ALT TAGS"}
-            title={"Ironman"}
-            location={"Albany, NY"}
+            title={"Triathalon"}
+            location={"Stoney Pointe New York"}
             description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis faucibus turpis vitae eleifend. Maecenas hendrerit urna nunc."}/>
             <EventCard 
             img={megan6}
             imageDescription={"DESCRIBE THE IMAGE HERE FOR ALT TAGS"}
-            title={"Triathalon"}
-            location={"Loudonville, NY"}
+            title={"Ironman"}
+            location={"Lake Placid"}
             description={"Proin id tortor felis. Nunc in facilisis ligula."}/>
             <EventCard 
             img={megan7}
             imageDescription={"DESCRIBE THE IMAGE HERE FOR ALT TAGS"}
             title={"Marathon"}
-            location={"New York, NY"}
+            location={"Houston"}
             description={"Morbi nec ipsum ut erat porttitor fringilla. Fusce laoreet egestas sollicitudin. Curabitur ac lacinia mi, in consectetur dui."}/>
         </EventResultsContainer>
     )

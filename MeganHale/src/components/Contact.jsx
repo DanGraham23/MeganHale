@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import megan1 from '../assets/images/MeganImages/megan1.jpg';
-import megan3 from '../assets/images/MeganImages/megan3.jpg';
+import megan1 from '../assets/images/megan1.jpg';
+import megan3 from '../assets/images/megan3.jpg';
 import {BsFillSendFill} from 'react-icons/bs';
 import { useState } from "react";
 
@@ -21,13 +21,13 @@ const Contact = () => {
 
     return (
         <ContactContainer id="contact">
-            <Anchor 
+            {/* <Anchor 
             href="https://www.timesunion.com/news/article/Grondahl-Triathlete-Megan-Hale-wanted-to-prove-17392607.php"
             target="_blank"
             rel="noopener noreferrer">
                 <Image src={megan1} alt="megan-giving-thumbs-up"/>
                 <ArticleHeader className="text">Blind woman conquers Ironman Lake Placid...</ArticleHeader>
-            </Anchor>
+            </Anchor> */}
             <Form onSubmit={handleSubmit}>
             <FormHeader>Get in Touch</FormHeader>
                 <Input 
@@ -50,82 +50,59 @@ const Contact = () => {
                 onChange={handleChange}/>
                 <Button><BsFillSendFill/>Send</Button>
             </Form>
-            <Anchor 
+            {/* <Anchor 
             href="https://infotel.ca/newsitem/guide-dogs-helping-blind-runners-stay-fit-despite-pandemic/it75456"
             target="_blank"
             rel="noopener noreferrer">
                 <Image src={megan3} alt="megan-running-with-excited-dog"/>
                 <ArticleHeader className="text">Guide dogs helping blind runners stay fit...</ArticleHeader>
             </Anchor>
-            
+             */}
         </ContactContainer>
     )
 }
 
 const ContactContainer = styled.div`
-    height: 520px;
+    height: 600px;
     display: flex;
     background-color: white;
     color: black;
-    @media screen and (max-width: 1200px){
-        height: 450px;
-    }
-    @media screen and (max-width: 768px){
-        flex-direction: column;
-        height: 1000px;
-        align-items: center;
-        justify-content: center;
-    }
+
 `
 const FormHeader = styled.h1`
-    @media screen and (max-width: 1200px){
-        font-size: 22px;
-    }
+
 `
 
-const ArticleHeader = styled.h1`
-    position: absolute;
-    top: 30%;
-    left: 15%;
-    display: none;
-    color: white;
-    text-decoration: underline 1px white;
-    text-underline-offset: 5px;
-    @media screen and (max-width: 1200px){
-        font-size: 20px;
-    }
-    @media screen and (max-width: 768px){
-        font-size: 16px;
-    }
-`
+// const ArticleHeader = styled.h1`
+//     position: absolute;
+//     top: 30%;
+//     left: 15%;
+//     display: none;
+//     color: white;
+//     text-decoration: underline 1px white;
+//     text-underline-offset: 5px;
+// `
 
-const Anchor = styled.a`
-    height: 100%;
-    width: 35%;
-    position: relative;
-    display: inline-block;
-    &:hover .text {
-        display: block;
-    }
-    @media screen and (max-width: 1200px){
-        width: 32.5%;
-    }
-    @media screen and (max-width: 768px){
-        width: 60%;
-        height: 30%;
-    }
-`
+// const Anchor = styled.a`
+//     height: 50%;
+//     width: 25%;
+//     position: relative;
+//     display: inline-block;
+//     &:hover .text {
+//         display: block;
+//     }
+// `
 
-const Image = styled.img`
-    height: 100%;
-    width: 100%;
-    &:hover{
-        filter: grayscale(80%) brightness(70%) contrast(100%);
-    }
-`
+// const Image = styled.img`
+//     height: 100%;
+//     width: 100%;
+//     &:hover{
+//         filter: grayscale(80%) brightness(70%) contrast(100%);
+//     }
+// `
 
 const Form = styled.form`
-    width: 25%;
+    width: 450px;
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -135,17 +112,13 @@ const Form = styled.form`
     font-size: 14px;
     border: 1px solid #c9c9c9;
     margin: auto;
-    @media screen and (max-width: 1200px){
-        width: 32.5%;
-    }
     @media screen and (max-width: 768px){
-        width: 60%;
-        height: 37.5%;
+        width: 325px;
     }
 `
 
 const Input = styled.input`
-    width: 50%;
+    width: 65%;
     height: 40px;
     outline: none;
     border: none;
@@ -157,7 +130,7 @@ const Input = styled.input`
 `
 
 const MessageInput = styled.textarea`
-    width: 50%;
+    width: 65%;
     max-width: 80%;
     height: 150px;
     max-height: 225px;
@@ -171,7 +144,7 @@ const MessageInput = styled.textarea`
 `
 
 const Button = styled.button`
-    width: 30%;
+    width: 40%;
     height: 40px;
     background-color: #0000ff;
     color: white;

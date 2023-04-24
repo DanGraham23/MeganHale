@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import megan5 from '../assets/images/MeganImages/megan5.jpg'
+import megan5 from '../assets/images/megan5.jpg'
 
 
 const About = () => {
@@ -11,7 +11,13 @@ const About = () => {
             <BioContainer>
                 <Header>Hello, I'm Megan.</Header>
                 <Paragraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id tortor felis. Nunc in facilisis ligula. Morbi nec ipsum ut erat porttitor fringilla. Fusce laoreet egestas sollicitudin. Curabitur ac lacinia mi, in consectetur dui. Sed mattis faucibus turpis vitae eleifend. Maecenas hendrerit urna nunc. Curabitur ac lacinia mi, in consectetur dui. Sed mattis faucibus turpis vitae eleifend. Maecenas hendrerit urna nunc
+                I am a blind college student at SUNY Brockport. My degree is in Adapted Physical Education. 
+                I developed my own program for blind females about women in sport issues based off of my own experiences. 
+                I work as a one on one coach at Camp Abilities, teaching students how to participate in sports with a visual impairment. 
+                <br />
+                <br />
+                I participated in my first Ironman triathlon in the summer of 2022 with my guide John Slyer. 
+                I am believed to be the first blind athlete to have completed Ironman Lake Placid. 
                 </Paragraph>
             </BioContainer>
         </AboutContainer>    
