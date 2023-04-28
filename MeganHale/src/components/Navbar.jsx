@@ -15,15 +15,15 @@ const Navbar = () => {
     return (
         <Nav>
             <Header>
-                <GiSprint aria-label="sprinting-person-logo"/>
+                <GiSprint aria-label="sprinting person logo"/>
                 Megan Hale
             </Header>
             <MobileNavTriangle display={toggleMenu}/>
             {!toggleMenu && <StyledIcon>
-                <GiHamburgerMenu aria-label='open-mobile-navigation-menu' onClick={toggleNavMenu}/>
+                <GiHamburgerMenu aria-label='open mobile navigation menu' onClick={toggleNavMenu}/>
                 </StyledIcon>}
             {toggleMenu && <StyledIcon>
-                <AiOutlineClose aria-label='close-mobile-navigation-menu' onClick={toggleNavMenu}/>
+                <AiOutlineClose aria-label='close mobile navigation menu' onClick={toggleNavMenu}/>
                 </StyledIcon>}
             <List display={toggleMenu}>
                 <Link activeClass="active"
@@ -82,6 +82,9 @@ const Header = styled.h1`
     cursor: default;
     @media screen and (max-width: 1023px){
         margin-left: 50px;
+    }
+    @media screen and (max-width: 768px){
+        font-size: 26px;
     }
 `
 

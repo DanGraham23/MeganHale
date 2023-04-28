@@ -7,17 +7,14 @@ const About = () => {
         <AboutContainer id="about">
             <Image 
             src={megan5} 
-            alt="megan-wearing-mask-hugging-dog"/>
+            alt="megan wearing a mask and hugging her dog"/>
             <BioContainer>
                 <Header>Hello, I'm Megan.</Header>
                 <Paragraph>
                 I am a blind college student at SUNY Brockport. My degree is in Adapted Physical Education. 
                 I developed my own program for blind females about women in sport issues based off of my own experiences. 
                 I work as a one on one coach at Camp Abilities, teaching students how to participate in sports with a visual impairment. 
-                <br />
-                <br />
                 I participated in my first Ironman triathlon in the summer of 2022 with my guide John Slyer. 
-                I am believed to be the first blind athlete to have completed Ironman Lake Placid. 
                 </Paragraph>
             </BioContainer>
         </AboutContainer>    
@@ -89,7 +86,7 @@ const Paragraph = styled.p`
         font-size: 11px;
     }
     @media screen and (max-width: 480px){
-        font-size: 10px;
+        font-size: 9px;
     }
 `
 
