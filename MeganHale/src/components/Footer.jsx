@@ -4,7 +4,7 @@ import {AiOutlineCopyrightCircle} from 'react-icons/ai';
 const Footer = () => {
     return (
         <FooterContainer>
-            <Header><AiOutlineCopyrightCircle/>2023, Megan Hale</Header>
+            <Header><AiOutlineCopyrightCircle aira-label="copyright symbol"/>2023, Megan Hale</Header>
         </FooterContainer>
     )
 }

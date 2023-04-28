@@ -11,7 +11,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"><BsFillPlayBtnFill aria-label='play-button-to-megan-hale-interview'></BsFillPlayBtnFill></Anchor>
             </StyledIcon>
-            <Image src={megan2}></Image>
+            <Image src={megan2} alt="Gray scale version of Megan doing an interview for HVCC"></Image>
         </HomeContainer>
     )
 }
@@ -33,7 +33,7 @@ const HomeContainer = styled.div`
 const Image = styled.img`
     width:100%;
     height:100%;
-    filter: grayscale(95%) brightness(60%) contrast(100%);
+    filter: grayscale(95%) brightness(55%) contrast(100%);
 `
 
 const StyledIcon = styled.div`
